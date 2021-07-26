@@ -1,11 +1,11 @@
 //load a file from disk
-function loadfile(filename,displayName){
-    // console.log(displayName);
+function loadfile(){
+    filename = "file.txt"
     let currentfile = "";
-    let url = "files/" + filename;
-
+    let url = "uploads/" + filename;
+    console.log("file.txt");
     //reset our UI
-    document.getElementById("fileName").innerHTML = displayName;
+    document.getElementById("fileName").innerHTML = "Preview";
     document.getElementById("searchstat").innerHTML = "";
     document.getElementById("keyword").value = "";
 
